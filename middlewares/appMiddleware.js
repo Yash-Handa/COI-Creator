@@ -38,6 +38,7 @@ function setup(app) {
   }));
   app.use(cookieParser());
   app.use(express.static(path.join(__dirname, '../public/src')));
+  app.use(express.static(path.join(__dirname, '../node_modules/materialize-css/dist')));
 }
 
 module.exports = setup;

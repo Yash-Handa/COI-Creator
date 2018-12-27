@@ -1,4 +1,61 @@
-h1 {
-  color: green;
+.custom-padding {
+  padding-top: 10vh;
+  padding-bottom: 5vh;
 }
- 
+
+.switch label {
+  font-size: 20px;
+}
+
+.switch label .lever {
+  background-color: rgb(238, 109, 174);
+}
+
+.switch label .lever:after {
+  background-color: rgb(240, 24, 132);
+}
+
+/* .row {
+  padding-left: 20px;
+  padding-right: 20px;
+} */
+
+.schedule {
+  background-color: rgba(238, 109, 173, 0.5);
+  padding: 20px;
+  border: 3px dashed rgba(240, 70, 155, 0.767);
+}
+
+.part{
+  background-color: rgba(132, 199, 193, 0.4);
+  padding: 20px;
+  border: 3px dashed rgba(52, 206, 190, 0.911);
+}
+
+.article{
+  background-color: rgba(132, 199, 193, 0.4);
+  padding: 20px;
+  border: 3px dashed rgba(52, 206, 190, 0.911);
+  border-top: 0;
+}
+
+.clause{
+  background-color: rgba(132, 199, 193, 0.4);
+  padding: 20px;
+  border: 3px dashed rgba(52, 206, 190, 0.911);
+  border-top: 0;
+}
+
+.sub-clause{
+  background-color: rgba(132, 199, 193, 0.4);
+  padding: 20px;
+  border: 3px dashed rgba(52, 206, 190, 0.911);
+  border-top: 0;
+}
+
+.sticky {
+  position: -webkit-fixed; /* Safari */
+  position: fixed;
+  top: 50%;
+  right: 4%;
+}
