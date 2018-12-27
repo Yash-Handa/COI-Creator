@@ -1,11 +1,15 @@
 {
-  "name": "express-dev-env",
+  "name": "coi-creator",
   "version": "0.0.0",
   "private": true,
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/Yash-Handa/COI-Creator.git"
+  },
   "scripts": {
     "prestart": "run-s lint-server lint-client",
     "start2": "node ./bin/www",
-    "debug": "set DEBUG=express-dev-env:* & npm run start2",
+    "debug": "set DEBUG=COI-Creator:* & npm run start2",
     "start": "run-p lint-w debug",
     "start-w": "nodemon --exec run-s prestart debug",
     "start-w-lite": "nodemon --exec npm run debug",

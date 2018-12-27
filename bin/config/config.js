@@ -16,6 +16,7 @@ const config = {
   dbName: process.env.DB_NAME,
   dbPass: process.env.DB_PASS,
   dbUser: process.env.DB_USER,
+  key: process.env.SECRET_KEY,
 };
 
 process.env.NODE_ENV = process.env.NODE_ENV || config.dev;

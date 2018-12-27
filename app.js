@@ -3,9 +3,9 @@ const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
 
-require('./DB/connect');
+// require('./DB/connect');
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
+const dataRouter = require('./routes/data');
 
 const app = express();
 
@@ -16,7 +16,7 @@ app.set('view engine', 'hbs');
 // add global middlewares to the app instance
 require('./middlewares/appMiddleware')(app);
 
-app.use('/users', usersRouter);
+app.use('/data', dataRouter);
 app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
