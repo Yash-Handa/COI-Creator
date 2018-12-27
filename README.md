@@ -1,18 +1,12 @@
-# Express-Dev-Env
-
-The development environment for Express with Front end boiler plates
+# COI-Creator
 
 >## The app is made using Express generator(v 4.16.0) with handlebars and runs on port 1998
 
 ## Environment Variables
 
-One of the best way to keep your secret keys, api keys, DB username and passwords safe and together is to store them in a `.env` file use it to manipulate node's `process.env` variable. This template also adopts this approach. Follow the steps below:
-
-1. locate the `.env.set` file in bin folder i.e., `./bin/.env.set`
-2. change the filename from `.env.set` to `.env`
-3. Add all your secret keys, api keys, DB username and passwords in this file.
-4. These keys will be then set to nodes env variable (follow the format: `DB_NAME = "~"` and replace ~ with key values.)
-5. To access these values in a file use: see **Config object** below.
+1. Add all your secret keys, api keys, DB username and passwords in this file.
+2. These keys will be then set to nodes env variable (follow the format: `DB_NAME = "~"` and replace ~ with key values.)
+3. To access these values in a file use: see **Config object** below.
 
 >note: `.env` files contain crucial information and are **not uploaded to GitHub**
 
@@ -28,10 +22,6 @@ For security **Helmet** is used with its defaults and additionally **Content Sec
 
 * **Helmet** - [npm Doc](https://www.npmjs.com/package/helmet)
 * **Content Security Policy** - [Helmet Doc](https://helmetjs.github.io/docs/csp/)
-
-## Response Compression
-
-The response object is gzip compressed using [compression](https://www.npmjs.com/package/compression). To request for an uncompressed response use **x-no-compression** in the request header.
 
 ## NPM Commands
 
@@ -52,8 +42,3 @@ The response object is gzip compressed using [compression](https://www.npmjs.com
 * Use as many Asynchronous functions as possible to reduce the server response time and occupance.
 * Deal properly with errors or the server will crash use try/catch(for synchronous) and Promises(for asynchronous) errors with the next(err) method.
 * Read this for production and devops ready configurations [Things to do in your environment / setup](https://expressjs.com/en/advanced/best-practice-performance.html#set-node_env-to-production)
-
-## To-Do
-
-* Use cookies securely
-* Add proper Logging ([Bunyan](https://github.com/trentm/node-bunyan) or [Winston](https://github.com/winstonjs/winston))
