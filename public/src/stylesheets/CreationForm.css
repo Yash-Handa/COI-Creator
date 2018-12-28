@@ -1,5 +1,5 @@
 .custom-padding {
-  padding-top: 10vh;
+  padding-top: 3vh;
   padding-bottom: 5vh;
 }
 
@@ -58,4 +58,15 @@
   position: fixed;
   top: 50%;
   right: 4%;
+}
+
+.fixed {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0%;
+  background-color: rgb(199, 150, 27);
+}
+
+.input-field.col .switch label {
+  color: whitesmoke;
 }
