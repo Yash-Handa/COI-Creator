@@ -1,6 +1,6 @@
 const debug = require('debug')('express-dev-env:createUser');
 
-const User = require('./schema.js');
+const User = require('./schemas/COISchema.js');
 
 module.exports = (fName, lName) => {
   const user = new User({
